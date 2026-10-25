@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المرحلة 10 — Le Salâm | La Prière du Prophète</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#4a7c59">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <script>
+    /* Enregistrement du Service Worker — SITE PUBLIÉ UNIQUEMENT :
+       jamais en local (développement), jamais dans une iframe (aperçu). */
+    (function () {
+      if (!('serviceWorker' in navigator)) return;
+      var host = location.hostname;
+      var isLocal =
+        location.protocol === 'file:' ||
+        host === 'localhost' ||
+        host === '127.0.0.1' ||
+        host === '[::1]';
+      if (isLocal) return;
+      if (window.self !== window.top) return;
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').catch(function () {});
+      });
+    })();
+  </script>
+  <script src="install-banner.js"></script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">🕌</div>
+        <span>La Prière du Prophète ﷺ</span>
+      </div>
+      <a href="Description_priere_et_adhkar_francais.pdf" download class="btn-pdf" title="Télécharger le document source (PDF)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Télécharger le fichier source
+      </a>
+    </div>
+  </div>
+
+  <nav>
+    <div class="container">
+      <a href="index.html">Accueil</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="guide.html">Guide complet</a>
+      <a href="stage-10-salam.html" class="active">المرحلة 10</a>
+      <button type="button" class="nav-install" title="Installer l&apos;application">&#8595; Installer</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="page-title">المرحلة 10 — Le Salâm</h1>
+    <p class="page-subtitle">Le Salâm — La fin de la prière</p>
+
+    <div class="stage-header">
+      <img src="images/stage-10-salam.jpg" alt="Salam - السلام على اليمين والشمال">
+      <div class="stage-title">🕌 étape 10 — Le Salâm</div>
+    </div>
+
+    <section class="card">
+      <h2>✅ Le Salâm et la fin de la prière</h2>
+      <p>Après le tachahhoud final et les invocations, le fidèle tourne la tête vers la droite et dit : <em>As-salâmu 'alaykoum wa rahmatou-llâh</em>, puis vers la gauche en disant la même formule. Le salâm clôt la prière et, selon l'avis le plus probant, fait partie de ses piliers.</p>
+      <p>Après le salâm, le fidèle demande pardon à Allah trois fois : <em>Astaghfirou-llâh</em>, puis dit : <em>Allahoumma anta-s-salâm, wa minka-s-salâm, tabârakt yâ dhal-jalî wa l-ikrîm</em>.</p>
+      <p>Il est ensuite recommandé de réciter les rappels après la prière : attestation de l'unicité, tasbîh, tahmîd et takbîr, le verset du Trône (Âyat al-Koursî) et les sourates protectrices (Al-Ikhlâs, Al-Falaq, An-Nâs) selon la Sunna.</p>
+      <div class="callout"><strong>💡 Pour les enfants :</strong> Le Salâm (As-salâmu 'alaykoum) se dit à droite puis à gauche — c'est la fin de la prière ! 🎉</div>
+    </section>
+
+    <div class="quiz-actions">
+      <a href="stage-9-tashahhud.html" class="btn">⬅️ المرحلة السابقة</a>
+      <a href="index.html" class="btn">🏠 Retour à l'accueil</a>
+      <a href="index.html" class="btn">🏠 Page principale</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>الصفحة الشاملة — مراحل الصلاة والشرح المفصل</p>
+    <p>Basé sur le document « La description de la prière du Prophète ﷺ — Du takbîr au salâm »</p>
+    <p>&copy; 2026 — Fait avec ❤️ pour l'éducation des enfants</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La Prière du Prophète ﷺ — Guide pour enfants</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#4a7c59">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <script>
+    /* Enregistrement du Service Worker — SITE PUBLIÉ UNIQUEMENT :
+       jamais en local (développement), jamais dans une iframe (aperçu). */
+    (function () {
+      if (!('serviceWorker' in navigator)) return;
+      var host = location.hostname;
+      var isLocal =
+        location.protocol === 'file:' ||
+        host === 'localhost' ||
+        host === '127.0.0.1' ||
+        host === '[::1]';
+      if (isLocal) return;
+      if (window.self !== window.top) return;
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').catch(function () {});
+      });
+    })();
+  </script>
+  <script src="install-banner.js"></script>
+</head>
+<body>
+
+  <!-- ========== Top bar avec bouton PDF activé ========== -->
+  <div class="topbar">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">🕌</div>
+        <span>La Prière du Prophète ﷺ</span>
+      </div>
+
+      <!-- Bouton PDF activé en haut à droite -->
+      <a href="Description_priere_et_adhkar_francais.pdf" download class="btn-pdf" title="Télécharger le document source (PDF)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Télécharger le fichier source
+      </a>
+    </div>
+  </div>
+
+  <!-- ========== Navigation ========== -->
+  <nav>
+    <div class="container">
+      <a href="index.html" class="active">Accueil — La prière</a>
+      <a href="quiz.html">Quiz — Questions</a>
+      <button type="button" class="nav-install" title="Installer l&apos;application">&#8595; Installer</button>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- ========== Hero ========== -->
+    <section class="hero">
+      <h1>Apprendre la prière du Prophète ﷺ</h1>
+      <p>Un guide simple et illustré pour les enfants, de la <b>Takbîr d'entrée</b> jusqu'au <b>Salâm</b>, en français.</p>
+    </section>
+
+    <!-- ========== Étapes illustrées ========== -->
+    <h2 style="text-align:center; color:var(--primary-dark); margin: 8px 0 6px;">Les étapes de la prière</h2>
+    <p style="text-align:center; color:var(--text-light); margin-bottom: 24px;">Suivez chaque étape avec calme et présence du cœur.</p>
+
+    <section class="steps">
+      <!-- 1 Qibla -->
+      <div class="step">
+        <div class="step-img" data-num="1"><img src="images/stage-1-qibla.jpg" alt="Enfant face à la Qibla" loading="lazy"></div>
+        <h3>Face à la Qibla</h3>
+        <p>Tournez-vous vers la Qibla, restez stable, regardez l'endroit de la prosternation.</p>
+        <div class="step-link"><a href="stage-1-qibla.html" class="btn small">Voir la page de la stage ➜</a></div>
+      </div>
+
+      <!-- 2 Takbir -->
+      <div class="step">
+        <div class="step-img" data-num="2"><img src="images/stage-2-takbir.jpg" alt="Enfant faisant le takbir d'entree" loading="lazy"></div>
+        <h3>Takbîr d'entrée</h3>
+        <p>Levez les mains et dites : <b>Allahou akbar</b> (Allah est le plus Grand).</p>
+        <div class="step-link"><a href="stage-2-takbir.html" class="btn small">Voir la page de la stage ➜</a></div>
+      </div>
+
+      <!-- 3 Standing / hands -->
+      <div class="step">
+        <div class="step-img" data-num="3"><img src="images/stage-3-debout.jpg" alt="Enfant debout, mains croisees" loading="lazy"></div>
+        <h3>Debout, mains croisées</h3>
+        <p>Placez la main droite sur la main gauche, avec l'intention dans le cœur.</p>
+        <div class="step-link"><a href="stage-3-intention.html" class="btn small">Voir la page de la stage ➜</a></div>
+      </div>
+
+      <!-- 4 Fatiha -->
+      <div class="step">
+        <div class="step-img" data-num="4"><img src="images/stage-3-debout.jpg" alt="Enfant debout recitant Al-Fatiha" loading="lazy"></div>
+        <h3>Al-Fâtiha</h3>
+        <p>Récitez la sourate Al-Fâtiha, puis dites : <b>Âmîn</b>.</p>
+        <div class="step-link"><a href="stage-4-fatiha.html" class="btn small">Voir la page de la stage ➜</a></div>
+      </div>
+
+      <!-- 5 Ruku -->
+      <div class="step">
+        <div class="step-img" data-num="5"><img src="images/stage-5-inclinaison.jpg" alt="Enfant en inclination (roukou')" loading="lazy"></div>
+        <h3>L'inclinaison (Roukou')</h3>
+        <p>Dites Allahou akbar, inclinez-vous, mains sur les genoux, dos droit. Dites <b>Soubhâna rabbiya-l-'azîm</b>.</p>
+        <div class="step-link"><a href="stage-5-roukou.html" class="btn small">Voir la page de la stage ➜</a></div>
+      </div>
+
+      <!-- 6 Standing up -->
+      <div class="step">
+        <div class="step-img" data-num="6"><img src="images/stage-3-debout.jpg" alt="Enfant se levant et se tenant droit" loading="lazy"></div>
+        <h3>Se relever et se tenir droit</h3>
+        <p>Dites <b>Sami'a-llâhou liman hamidah</b>, puis <b>Rabbanâ wa laka-l-hamd</b>.</p>
+        <div class="step-link"><a href="stage-6-relever.html" class="btn small">Voir la page de la stage ➜</a></div>
+      </div>
+
+      <!-- 7 Sujud -->
+      <div class="step">
+        <div class="step-img" data-num="7"><img src="images/stage-7-prosternation.jpg" alt="Enfant en prosternation" loading="lazy"></div>
+        <h3>La prosternation (Soujûd)</h3>
+        <p>Dites Allahou akbar, prosternez-vous sur sept parties. Dites <b>Soubhâna rabbiya-l-a'lâ</b>.</p>
+        <div class="step-link"><a href="stage-7-soujoud.html" class="btn small">Voir la page de la stage ➜</a></div>
+      </div>
+
+      <!-- 8 Sitting between -->
+      <div class="step">
+        <div class="step-img" data-num="8"><img src="images/stage-8-assis.jpg" alt="Enfant assis entre deux prosternations" loading="lazy"></div>
+        <h3>Assis entre les deux prosternations</h3>
+        <p>Levez la tête en disant Allahou akbar, asseyez-vous tranquillement. Dites <b>Rabbi-ghfirlî</b>.</p>
+        <div class="step-link"><a href="stage-8-assis.html" class="btn small">Voir la page de la stage ➜</a></div>
+      </div>
+
+      <!-- 9 Tashahhud -->
+      <div class="step">
+        <div class="step-img" data-num="9"><img src="images/stage-9-tashahoud.jpg" alt="Enfant assis en tashahhud" loading="lazy"></div>
+        <h3>Le Tashahhud</h3>
+        <p>Asseyez-vous et récitez le Tashahhud, avec un signe de l'index.</p>
+        <div class="step-link"><a href="stage-9-tashahhud.html" class="btn small">Voir la page de la stage ➜</a></div>
+      </div>
+
+      <!-- 10 Salam -->
+      <div class="step">
+        <div class="step-img" data-num="10"><img src="images/stage-10-salam.jpg" alt="Enfant faisant le salam" loading="lazy"></div>
+        <h3>Le Salâm</h3>
+        <p>Tournez la tête à droite puis à gauche : <b>As-salâmu 'alaykoum wa rahmatou-llâh</b>.</p>
+        <div class="step-link"><a href="stage-10-salam.html" class="btn small">Voir la page de la stage ➜</a></div>
+      </div>
+    </section>
+
+    <div class="callout">
+      <strong>💡 Pour bien prier :</strong> observez la tranquillité dans chaque posture, ne vous précipitez pas, et alterner entre les formules de rappel authentiques est conforme à la Sunna.
+    </div>
+
+    <!-- ========== Chapitres détaillés (accordéon) ========== -->
+    <h2 style="text-align:center; color:var(--primary-dark); margin: 10px 0 18px;">Chapitres détaillés du guide</h2>
+
+    <section class="chapters">
+      <div class="chapter">
+        <div class="chapter-head">Introduction &amp; Conditions de validité <span class="chevron">▾</span></div>
+        <div class="chapter-body">
+          <p>La prière est le pilier le plus important de l'islam après les deux attestations de foi. Le Prophète ﷺ a dit : <i>« Priez comme vous m'avez vu prier »</i>.</p>
+          <p><strong>Conditions :</strong> l'islam, la raison, le discernement, l'entrée de l'heure, la purification (ablutions/bain/tayammoum), l'élimination des impuretés, la couverture de la nudité, l'orientation vers la Qibla et l'intention dans le cœur.</p>
+        </div>
+      </div>
+
+      <div class="chapter">
+        <div class="chapter-head">Début de la prière : Takbîr, invocation, Al-Fâtiha <span class="chevron">▾</span></div>
+        <div class="chapter-body">
+          <p>Le <b>takbîr d'entrée</b> (<i>Allahou akbar</i>) est un pilier : la prière ne commence pas sans lui. Le fidèle lève les mains, place la droite sur la gauche, puis récite une invocation d'ouverture, demande protection contre Satan, et récite Al-Fâtiha (<i>pilier</i>) puis <i>Âmîn</i>.</p>
+        </div>
+      </div>
+
+      <div class="chapter">
+        <div class="chapter-head">L'inclinaison (Roukou') et le redressement <span class="chevron">▾</span></div>
+        <div class="chapter-body">
+          <p>Après la récitation, le fidèle dit <i>Allahou akbar</i>, s'incline, pose les mains sur les genoux, garde le dos droit et dit <i>Soubhâna rabbiya-l-'azîm</i>. En se relevant : <i>Sami'a-llâhou liman hamidah</i> / <i>Rabbanâ wa laka-l-hamd</i>. Le redressement complet est un pilier.</p>
+        </div>
+      </div>
+
+      <div class="chapter">
+        <div class="chapter-head">La prosternation (Soujûd) et l'assise entre les deux <span class="chevron">▾</span></div>
+        <div class="chapter-body">
+          <p>Le fidèle dit <i>Allahou akbar</i> et se prosterne sur sept parties (front avec le nez, deux mains, deux genoux, extrémités des deux pieds). Formule : <i>Soubhâna rabbiya-l-a'lâ</i>. Entre les deux prosternations, il dit <i>Rabbi-ghfirlî</i>.</p>
+        </div>
+      </div>
+
+      <div class="chapter">
+        <div class="chapter-head">Le Tashahhud et la prière sur le Prophète ﷺ <span class="chevron">▾</span></div>
+        <div class="chapter-body">
+          <p>Le Tashahhud est un pilier. Le fidèle y fait un signe de l'index. Puis il prie sur le Prophète avec la formule abrahamique (<i>Allahoumma salli 'alâ Mouhammad...</i>).</p>
+        </div>
+      </div>
+
+      <div class="chapter">
+        <div class="chapter-head">Fin de la prière : invocations et Salâm <span class="chevron">▾</span></div>
+        <div class="chapter-body">
+          <p>Avant le Salâm, on demande protection contre quatre choses. Après le Salâm, on demande pardon trois fois (<i>Astaghfirou-llâh</i>), puis on dit les rappels : attestation de l'unicité, tasbîh, tahmîd, takbîr, Âyat al-Koursî et les sourates protectrices (Al-Ikhlâs, Al-Falaq, An-Nâs).</p>
+        </div>
+      </div>
+
+      <div class="chapter">
+        <div class="chapter-head">Pilier, Obligation et Acte recommandé (Sunna) <span class="chevron">▾</span></div>
+        <div class="chapter-body">
+          <p><b>Pilier :</b> partie constitutive sans laquelle la prière n'est pas valide (ex. takbîr d'entrée, Al-Fâtiha, Roukou', Soujûd, Tashahhud final, Salâm). <b>Obligation :</b> abandon délibéré = péché ; oubli compensé par la prosternation de l'oubli. <b>Acte recommandé :</b> récompensé si fait, non péché si omis (ex. invocation d'ouverture).</p>
+        </div>
+      </div>
+    </section>
+
+    <div style="text-align:center;">
+      <a href="quiz.html" class="btn">Aller au quiz 📝</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>Guide éducatif pour enfants — Apprendre la prière en français</p>
+    <p>Basé sur le document « La description de la prière du Prophète ﷺ — Du takbîr au salâm »</p>
+    <p>&copy; 2026 — Fait avec ❤️ pour l'éducation des enfants</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

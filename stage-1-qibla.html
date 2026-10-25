@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المرحلة 1 — Face à la Qibla | La Prière du Prophète</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#4a7c59">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <script>
+    /* Enregistrement du Service Worker — SITE PUBLIÉ UNIQUEMENT :
+       jamais en local (développement), jamais dans une iframe (aperçu). */
+    (function () {
+      if (!('serviceWorker' in navigator)) return;
+      var host = location.hostname;
+      var isLocal =
+        location.protocol === 'file:' ||
+        host === 'localhost' ||
+        host === '127.0.0.1' ||
+        host === '[::1]';
+      if (isLocal) return;
+      if (window.self !== window.top) return;
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').catch(function () {});
+      });
+    })();
+  </script>
+  <script src="install-banner.js"></script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">🕌</div>
+        <span>La Prière du Prophète ﷺ</span>
+      </div>
+      <a href="Description_priere_et_adhkar_francais.pdf" download class="btn-pdf" title="Télécharger le document source (PDF)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Télécharger le fichier source
+      </a>
+    </div>
+  </div>
+
+  <nav>
+    <div class="container">
+      <a href="index.html">Accueil</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="guide.html">Guide complet</a>
+      <a href="stage-1-qibla.html" class="active">المرحلة 1</a>
+      <button type="button" class="nav-install" title="Installer l&apos;application">&#8595; Installer</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="page-title">المرحلة 1 — Face à la Qibla</h1>
+    <p class="page-subtitle">La station debout et l'orientation vers la qibla — Description de la prière</p>
+
+    <div class="stage-header">
+      <img src="images/stage-1-qibla.jpg" alt="Enfant face a la Qibla">
+      <div class="stage-title">🕌 étape 1 — Face à la Qibla</div>
+    </div>
+
+    <section class="card">
+      <h2>🕌 La station debout et l'orientation vers la qibla</h2>
+      <p>Le fidèle se tient debout face à la qibla, reste stable et dirige son regard vers l'endroit où il se prosterne.</p>
+      <p>Dans la prière obligatoire, la station debout est requise pour celui qui en est capable, conformément à la parole d'Allah : « Tenez-vous debout devant Allah avec humilité » <em>(Coran, 2:238)</em>.</p>
+      <p>Pour une prière surérogatoire, il est permis de prier assis même si l'on peut se tenir debout, mais la prière debout est meilleure.</p>
+      <div class="callout"><strong>💡 Pour les enfants :</strong> Avant de commencer, le fidèle se tourne calmement vers la qibla et s'assure que tout est en ordre avant de former l'intention.</div>
+    </section>
+
+    <div class="quiz-actions">
+      <a href="index.html" class="btn">⬅️ Retour à l'accueil</a>
+      <a href="stage-2-takbir.html" class="btn">المرحلة التالية — Takbîr d'entrée ➜</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>الصفحة الشاملة — مراحل الصلاة والشرح المفصل</p>
+    <p>Basé sur le document « La description de la prière du Prophète ﷺ — Du takbîr au salâm »</p>
+    <p>&copy; 2026 — Fait avec ❤️ pour l'éducation des enfants</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

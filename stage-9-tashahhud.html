@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المرحلة 9 — Le Tachahhoud | La Prière du Prophète</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#4a7c59">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <script>
+    /* Enregistrement du Service Worker — SITE PUBLIÉ UNIQUEMENT :
+       jamais en local (développement), jamais dans une iframe (aperçu). */
+    (function () {
+      if (!('serviceWorker' in navigator)) return;
+      var host = location.hostname;
+      var isLocal =
+        location.protocol === 'file:' ||
+        host === 'localhost' ||
+        host === '127.0.0.1' ||
+        host === '[::1]';
+      if (isLocal) return;
+      if (window.self !== window.top) return;
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').catch(function () {});
+      });
+    })();
+  </script>
+  <script src="install-banner.js"></script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">🕌</div>
+        <span>La Prière du Prophète ﷺ</span>
+      </div>
+      <a href="Description_priere_et_adhkar_francais.pdf" download class="btn-pdf" title="Télécharger le document source (PDF)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Télécharger le fichier source
+      </a>
+    </div>
+  </div>
+
+  <nav>
+    <div class="container">
+      <a href="index.html">Accueil</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="guide.html">Guide complet</a>
+      <a href="stage-9-tashahhud.html" class="active">المرحلة 9</a>
+      <button type="button" class="nav-install" title="Installer l&apos;application">&#8595; Installer</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="page-title">المرحلة 9 — Le Tachahhoud</h1>
+    <p class="page-subtitle">Le premier Tachahhoud — Après la deuxième prosternation</p>
+
+    <div class="stage-header">
+      <img src="images/stage-9-tashahoud.jpg" alt="Tashahhud">
+      <div class="stage-title">🕌 étape 9 — Le Tachahhoud</div>
+    </div>
+
+    <section class="card">
+      <h2>📖 Le premier Tachahhoud</h2>
+      <p>Après la deuxième prosternation, le fidèle se relève pour l'unité suivante en disant : <em>Allahou akbar</em> et accomplit les mêmes actes que dans la première unité, sans répéter l'invocation d'ouverture.</p>
+      <p>Après la deuxième unité, il s'assied pour le premier tachahhoud dans les prières de trois ou quatre unités.</p>
+      <h3>Les formulations authentiques du tachahhoud</h3>
+      <div class="aya">At-tahiyya tou lillâhi wa-s-salawâti wa-t-tayyibât. As-salâmu 'alayka ayy ouh-n-nabiyyou wa rahmâou-llâhi wa barakâhouh. As-salâmu 'alaynâ wa 'alayna l'âbidî-llâhi-s-sâlihîn. Ach-hadou an lâ ilâha illâ-llâh, wa ach-hadou anna Mouhammadan 'abdouhou wa râhouluh.</div>
+      <p>Le fidèle fait un signe avec l'index pendant le tachahhoud selon la manière rapportée dans la Sunna. Selon l'avis le plus probant ici, le premier tachahhoud est obligatoire ; s'il est omis par oubli, il est compensé par la prosternation de l'oubli selon ses règles.</p>
+      <div class="callout"><strong>💡 Pour les enfants :</strong> Le tachahhoud est une position d'assise sereine pour dire les paroles de reconnaissance d'Allah.</div>
+    </section>
+
+    <div class="quiz-actions">
+      <a href="stage-8-assis.html" class="btn">⬅️ المرحلة السابقة</a>
+      <a href="index.html" class="btn">🏠 Retour à l'accueil</a>
+      <a href="stage-10-salam.html" class="btn">المرحلة التالية — Salâm ➜</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>الصفحة الشاملة — مراحل الصلاة والشرح المفصل</p>
+    <p>Basé sur le document « La description de la prière du Prophète ﷺ — Du takbîr au salâm »</p>
+    <p>&copy; 2026 — Fait avec ❤️ pour l'éducation des enfants</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

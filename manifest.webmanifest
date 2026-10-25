@@ -1,0 +1,17 @@
+{
+  "name": "La Prière du Prophète ﷺ — Guide pour enfants",
+  "short_name": "La Prière",
+  "description": "Guide illustré pour apprendre la prière en français, du takbîr au salâm.",
+  "lang": "fr",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#4a7c59",
+  "background_color": "#fbfaf5",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/apple-touch-icon.png", "sizes": "180x180", "type": "image/png", "purpose": "any" }
+  ]
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المرحلة 5 — Inclinaison (Roukou') | La Prière du Prophète</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#4a7c59">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <script>
+    /* Enregistrement du Service Worker — SITE PUBLIÉ UNIQUEMENT :
+       jamais en local (développement), jamais dans une iframe (aperçu). */
+    (function () {
+      if (!('serviceWorker' in navigator)) return;
+      var host = location.hostname;
+      var isLocal =
+        location.protocol === 'file:' ||
+        host === 'localhost' ||
+        host === '127.0.0.1' ||
+        host === '[::1]';
+      if (isLocal) return;
+      if (window.self !== window.top) return;
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').catch(function () {});
+      });
+    })();
+  </script>
+  <script src="install-banner.js"></script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">🕌</div>
+        <span>La Prière du Prophète ﷺ</span>
+      </div>
+      <a href="Description_priere_et_adhkar_francais.pdf" download class="btn-pdf" title="Télécharger le document source (PDF)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Télécharger le fichier source
+      </a>
+    </div>
+  </div>
+
+  <nav>
+    <div class="container">
+      <a href="index.html">Accueil</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="guide.html">Guide complet</a>
+      <a href="stage-5-roukou.html" class="active">المرحلة 5</a>
+      <button type="button" class="nav-install" title="Installer l&apos;application">&#8595; Installer</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="page-title">المرحلة 5 — Inclinaison (Roukou')</h1>
+    <p class="page-subtitle">Le Roukou' — S'incliner devant Allah</p>
+
+    <div class="stage-header">
+      <img src="images/stage-5-inclinaison.jpg" alt="Inclinaison (roukou')">
+      <div class="stage-title">🕌 étape 5 — Inclinaison (Roukou')</div>
+    </div>
+
+    <section class="card">
+      <h2>🌟 L'inclinaison (Roukou')</h2>
+      <p>Après la récitation, le fidèle lève les mains en disant « Allahou akbar », puis s'incline. Il pose les mains sur les genoux, garde le dos aussi droit que possible et la tête dans le prolongement du dos. Il demeure tranquille dans cette position.</p>
+      <h3>Les formules de rappel pendant l'inclinaison</h3>
+      <p>Parmi les formules les plus connues : <em>Soubhâna rabbiya-l-'azîm</em> (Gloire à mon Seigneur, l'Immense), répétée trois fois ou davantage selon la durée de l'inclinaison.</p>
+      <p>Il est également rapporté de dire : <em>Soubhânaka Allahoumma rabbân wa bi-hamdika, Allahoumma-ghfir lâ</em> ; et : <em>Soubboûhoun qoudsouhoun, rabbou-l-malâ'ikati wa-r-rooh</em>.</p>
+      <div class="callout"><strong>💡 Pour les enfants :</strong> Pendant l'inclinaison, on récite « Soubhâna rabbiya-l-'azîm » pour glorifier Allah avec humilité.</div>
+    </section>
+
+    <div class="quiz-actions">
+      <a href="stage-4-fatiha.html" class="btn">⬅️ المرحلة السابقة</a>
+      <a href="index.html" class="btn">🏠 Retour à l'accueil</a>
+      <a href="stage-6-relever.html" class="btn">المرحلة التالية — Se relever ➜</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>الصفحة الشاملة — مراحل الصلاة والشرح المفصل</p>
+    <p>Basé sur le document « La description de la prière du Prophète ﷺ — Du takbîr au salâm »</p>
+    <p>&copy; 2026 — Fait avec ❤️ pour l'éducation des enfants</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

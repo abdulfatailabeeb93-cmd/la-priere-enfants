@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الصفحة الشاملة — مراحل الصلاة</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#4a7c59">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <script>
+    /* Enregistrement du Service Worker — SITE PUBLIÉ UNIQUEMENT :
+       jamais en local (développement), jamais dans une iframe (aperçu). */
+    (function () {
+      if (!('serviceWorker' in navigator)) return;
+      var host = location.hostname;
+      var isLocal =
+        location.protocol === 'file:' ||
+        host === 'localhost' ||
+        host === '127.0.0.1' ||
+        host === '[::1]';
+      if (isLocal) return;
+      if (window.self !== window.top) return;
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').catch(function () {});
+      });
+    })();
+  </script>
+  <script src="install-banner.js"></script>
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">🕌</div>
+        <span>La Prière du Prophète ﷺ</span>
+      </div>
+      <a href="Description_priere_et_adhkar_francais.pdf" download class="btn-pdf" title="Télécharger le document source (PDF)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Télécharger le fichier source
+      </a>
+    </div>
+  </div>
+
+  <nav>
+    <div class="container">
+      <a href="index.html">Accueil — La prière</a>
+      <a href="quiz.html">Quiz — Questions</a>
+      <a href="guide.html" class="active">الصفحة الشاملة</a>
+      <button type="button" class="nav-install" title="Installer l&apos;application">&#8595; Installer</button>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <h1 class="page-title">الصفحة الشاملة — مراحل الصلاة والشرح المفصل</h1>
+    <p class="page-subtitle">محتوى شامل ومفصل من الملف الأصلي — Du Takbîr au Salâm</p>
+
+    <section class="card">
+      <h2>📖 المقدمة — Introduction</h2>
+      <p>Louange à Allah, Seigneur des mondes. Que la prière et le salut d'Allah soient sur notre Prophète Muhammad, sur sa famille et sur tous ses Compagnons.</p>
+      <p>La prière est le plus important des piliers pratiques de l'islam après les deux attestations de foi. Elle est le lien entre le serviteur et son Seigneur. La religion en a prescrit la description, les piliers, les obligations, les actes recommandés ainsi que les invocations et formules de rappel, en paroles et en actes.</p>
+      <p>Le Prophète ﷺ a ordonné à sa communauté de suivre sa manière de prier : « Priez comme vous m'avez vu prier », rapporté par al-Boukhari.</p>
+      <p><strong>Méthode :</strong> présenter ce qui est établi dans le Coran et la Sunna authentique, distinguer les piliers, les obligations et les actes recommandés, et ne pas affirmer qu'une formule ou une posture est obligatoire sans preuve. Par son avis le plus probant, on entend l'avis qui paraît le mieux appuyé par les preuves, sans prétendre qu'un consensus existe là où les savants divergent.</p>
+    </section>
+
+    <section class="card">
+      <h2>🌙 الفصل الأول — Les conditions de validité de la prière</h2>
+      <h3>1.1. Les conditions de validité</h3>
+      <p>Les conditions comprennent : l'islam, la raison, la capacité de discernement, l'entrée de l'heure de la prière, la purification de l'état d'impureté rituelle par les ablutions, le bain rituel ou le tayammoum lorsque ses conditions sont réunies, l'élimination des impuretés du corps, des vêtements et du lieu de prière en tenant compte des cas d'excuse, d'ignorance et d'oubli, la couverture de la nudité légale, l'orientation vers la qibla lorsque cela est possible, et l'intention dans le cœur sans qu'il soit nécessaire de la prononcer.</p>
+      <p>Il faut veiller à réunir ces conditions avant de commencer, tout en tenant compte des exceptions établies par les textes en cas d'incapacité, d'oubli ou de situation similaire.</p>
+
+      <h3>1.2. Se préparer à la prière</h3>
+      <p>Il est recommandé d'accomplir correctement les ablutions, de se rendre à la prière avec calme et dignité, et d'écarter ce qui détourne l'attention. Parmi les bonnes attitudes : le recueillement, la présence du cœur, l'absence de gestes inutiles, le fait de ne pas tourner la tête sans raison et l'accomplissement complet de l'inclinaison, de la prosternation et du redressement.</p>
+    </section>
+
+    <section class="card">
+      <h2>🕌 الفصل الثاني — Description détaillée de la prière</h2>
+
+      <h3>2.1. La station debout et l'orientation vers la qibla</h3>
+      <p>Le fidèle se tient debout face à la qibla, reste stable et dirige son regard vers l'endroit où il se prosterne. Dans la prière obligatoire, la station debout est requise pour celui qui en est capable, conformément à la parole d'Allah : « Tenez-vous debout devant Allah avec humilité » (Coran, 2:238). Pour une prière surérogatoire, il est permis de prier assis même si on peut se tenir debout, mais la prière debout est meilleure.</p>
+
+      <h3>2.2. Le takbîrat al-ihrâm (takbîr d'entrée en prière)</h3>
+      <p>Le fidèle lève les mains à hauteur des épaules ou des prunelles des hautes oreilles, puis dit : « Allahou akbar » (Allah est le plus Grand). Ce takbîr est un pilier : la prière ne commence pas sans lui. Il est permis de lever les mains en même temps que le takbîr, juste avant ou juste après, car ces manières sont rapportées dans la Sunna.</p>
+      <p>Il place la main droite sur la main gauche selon la manière rapportée dans la Sunna, sans affectation. L'intention se trouve dans le cœur : il détermine intentionnellement quelle prière il accomplit, sans la prononcer.</p>
+
+      <h3>2.3. L'invocation d'ouverture</h3>
+      <p>Après le takbîr d'entrée et avant la récitation d'al-Fâtiha, il peut prononcer une invocation rapportée, notamment : <i>Soubhânaka Allahoumma wa bi-hamdika, wa tabâraka smouka, wa taçhala jadouka, wa lâ ilâha ghayrouk</i>.</p>
+      <p>Une autre invocation authentiquement rapportée est : <i>Allahoumma bârif bayna wa bayna khâtîya kamâ bârifta bayna l-machriqi wa l-maghrib. Allahoumma naqqina min khâtîya kamâ younqath-thawbou l-abyadou mina d-dânâs. Allahoumma-ghsilna min khâtîya bi-th-thalji wa l-mithqî wa l-barad.</i></p>
+      <p>L'invocation d'ouverture est recommandée, mais elle n'est ni un pilier ni une obligation selon l'avis retenu ici. Celui qui la laisse a une prière valide et n'a pas à faire la prosternation du oubli pour cela. Il est préférable d'alterner entre les formulations authentiques plutôt que de les réunir systématiquement dans une même prière.</p>
+
+      <h3>2.4. La demande de protection, la basmala et al-Fâtiha</h3>
+      <p>Avant la récitation, il dit : <i>Âoudhou billâhi mina chaytanir-râjîm</i> (Je cherche protection auprès d'Allah contre Satan le maudit). Il peut ajouter : <i>Âoudhou billâhi-s-samîli-l-âlam mina chaytanir-râjîm</i>.</p>
+      <p>Il commence la récitation par la basmala, en récitant voix haute ou basse selon la manière de prière établie. Il récite intégralement la sourate al-Fâtiha. Selon l'avis le plus probant, elle est un pilier, conformément à la parole du Prophète ﷺ : « Il n'y a pas de prière pour celui qui ne récite pas l'ouverture du Livre », rapporté par al-Boukhari et Mouslim. Puis il dit : « Âmîn ». Il est recommandé à l'imam, à celui qui prie derrière lui et à celui qui prie seul de la dire ; dans les prières à voix haute, elle est prononcée à voix haute selon la manière prescrite.</p>
+
+      <h3>2.5. Réciter une sourate après al-Fâtiha</h3>
+      <p>Après al-Fâtiha, le fidèle récite ce qui lui est facile du Coran pendant les deux premières unités de la prière obligatoire, une sourate entière ou une partie. Dans les deux dernières unités d'une prière de quatre unités, ainsi que dans la troisième unité du maghrib, il se limite généralement à al-Fâtiha ; c'est la description la plus connue transmise de la prière.</p>
+    </section>
+
+    <section class="card">
+      <h2>🌟 الفصل الثالث — L'inclinaison (Roukou') et ses invocations</h2>
+
+      <h3>3.1. Comment s'incliner</h3>
+      <p>Après la récitation, il lève les mains en disant <i>Allahou akbar</i>, puis s'incline. Il pose les mains sur les genoux, garde le dos aussi droit que possible et la tête dans le prolongement du dos. Il demeure tranquille dans cette position.</p>
+
+      <h3>3.2. Les formules de rappel pendant l'inclinaison</h3>
+      <p>Parmi les formules les plus connues : <i>Soubhâna rabbiya-l-'azîm</i> (Gloire à mon Seigneur, l'Immense), répétée trois fois ou davantage selon la durée de l'inclinaison.</p>
+      <p>Il est également rapporté de dire : <i>Soubhânaka Allahoumma rabbân wa bi-hamdika, Allahoumma-ghfir lâ</i> ; et : <i>Soubboûhoun qoudsouhoun, rabbou-l-malâ'ikati wa-r-rooh</i>.</p>
+      <p>Il est légitime d'alterner entre les formules authentiques, sans croire qu'une seule formule précise est obligatoire à chaque inclinaison. Il faut distinguer le fait de prononcer un rappel de l'obligation de lui attribuer un nombre précis.</p>
+    </section>
+
+    <section class="card">
+      <h2>🙏 الفصل الرابع — Se relever de l'inclinaison et se tenir droit</h2>
+      <h3>Formules et posture</h3>
+      <p>En se relevant, le fidèle dit : <i>Samî'a-llâhou liman hamidah</i> (Allah entend celui qui Le loue). Cette formule est dite par l'imam et celui qui prie seul. Celui qui prie derrière l'imam dit en se redressant : <i>Rabbân wa laka-l-hamd</i>, ou <i>Rabbân laka-l-hamd</i>.</p>
+      <p>Parmi les formulations rapportées : <i>Allahoumma rabbân laka-l-hamd</i> et <i>Rabbân wa laka-l-hamd, hamdan kathiran tayyiban moubarakan fahîh</i>.</p>
+      <p>Il est recommandé de lever les mains en se relevant de l'inclinaison. Le redressement complet après l'inclinaison est un pilier : relever rapidement la tête sans se tenir droit ne suffit pas.</p>
+    </section>
+
+    <section class="card">
+      <h2>🌙 الفصل الخامس — La prosternation (Soujûd) et ses invocations</h2>
+
+      <h3>5.1. Comment se prosterner</h3>
+      <p>Après s'être redressé de l'inclinaison, le fidèle dit <i>Allahou akbar</i>, puis se prosterne sur sept parties : le front avec le nez, les deux mains, les deux genoux et les extrémités des deux pieds. Il écarte les bras des flancs autant que possible, ne pose pas les avant-bras à plat sur le sol et reste tranquille dans la prosternation.</p>
+
+      <h3>5.2. Les formules de rappel pendant la prosternation</h3>
+      <p>La formule la plus connue est : <i>Soubhâna rabbiya-l-a'lâ</i> (Gloire à mon Seigneur, le Très-Haut), répétée trois fois ou davantage. Il est également rapporté : <i>Soubhânaka Allahoumma rabbân wa bi-hamdika, Allahoumma-ghfir lâ</i>.</p>
+      <p>Parmi les invocations rapportées : <i>Allahoumma laka sajadtu, wa bika âmntu, wa laka aslamtu</i>. Sajada wajhiya lilladh khalaqahou wa sawwarahou, wa chaqqa samâhâou wa basarahou, tabâraka-llâhou ahsanou-l-khâliqîn.</p>
+      <p>Et : <i>Allahoumma-ghfir lâ dhanbû koul-lahou, dîqqahou wa jillahou, wa âwwalahou wa âkhirahou, wa âlîniyatahou wa sirrah</i>.</p>
+      <p>Il est recommandé de multiplier les invocations pendant la prosternation, car le Prophète ﷺ a dit : « Le serviteur est au plus près de son Seigneur lorsqu'il est prosterné ; multipliez donc les invocations », rapporté par Mouslim.</p>
+    </section>
+
+    <section class="card">
+      <h2>🛋️ الفصل السادس — S'asseoir entre les deux prosternations</h2>
+      <h3>Formule et posture</h3>
+      <p>Après la première prosternation, le fidèle relève la tête en disant <i>Allahou akbar</i> et s'assied tranquillement. Parmi les manières rapportées, il s'assied sur le pied gauche et redresse le pied droit, les orteils tournés vers la qibla autant que possible.</p>
+      <p>Il dit : <i>Rabbi-ghfirlî</i>, Rabbi-ghfirlî. Une autre formulation rapportée est : <i>Allahoumma-ghfir lî, wa-rhamnî, wa-hdînî, wa-jbournî, wa-ghfinî, wa-rzouqî</i>. Puis il dit <i>Allahou akbar</i> et effectue la seconde prosternation. La position assise entre les deux prosternations est un pilier, et la tranquillité dans cette position est obligatoire.</p>
+    </section>
+
+    <section class="card">
+      <h2>📖 الفصل السابع — La deuxième unité et le premier tachahhoud</h2>
+      <h3>7.1. Le tachahhoud</h3>
+      <p>Après la seconde prosternation, le fidèle se relève pour l'unité suivante en disant <i>Allahou akbar</i> et accomplit les mêmes actes que dans la première unité, sans répéter l'invocation d'ouverture. Après la deuxième unité, il s'assied pour le premier tachahhoud dans les prières de trois ou quatre unités.</p>
+      <p>Parmi les formulations authentiques les plus connues du tachahhoud :</p>
+      <div class="aya">At-tahiyya tou lillâhi wa-s-salawâti wa-t-tayyibât. As-salâmu 'alayka ayy ouh-n-nabiyyou wa rahmâou-llâhi wa barakâhouh. As-salâmu 'alaynâ wa 'alayna l'âbidî-llâhi-s-sâlihîn. Ach-hadou an lâ ilâha illâ-llâh, wa ach-hadou anna Mouhammadan 'abdouhou wa râhouluh.</div>
+      <p>Le fidèle fait un signe avec l'index pendant le tachahhoud selon la manière rapportée dans la Sunna. Selon l'avis le plus probant ici, le premier tachahhoud est obligatoire ; s'il est omis par oubli, il est compensé par la prosternation de l'oubli selon ses règles.</p>
+    </section>
+
+    <section class="card">
+      <h2>⬆️ الفصل الثامن — Se lever pour la troisième et la quatrième unité</h2>
+      <h3>Les dernières unités</h3>
+      <p>Dans une prière de trois ou quatre unités, le fidèle se relève après le premier tachahhoud en disant <i>Allahou akbar</i>. Il récite al-Fâtiha dans les dernières unités ; il lui est parfois permis d'y ajouter un passage du Coran. Dans chaque unité, il accomplit l'inclinaison, le redressement, deux prosternations et la position assise entre elles, en observant la tranquillité. Dans une prière de quatre unités, il s'assied pour le tachahhoud final après la quatrième ; dans le maghrib, après la troisième.</p>
+    </section>
+
+    <section class="card">
+      <h2>🤲 الفصل التاسع — Le tachahhoud final et la prière sur le Prophète ﷺ</h2>
+
+      <h3>9.1. Le tachahhoud final</h3>
+      <p>À la fin de la prière, le fidèle s'assied et récite le tachahhoud mentionné précédemment. Selon l'avis le plus probant, le tachahhoud final est un pilier de la prière.</p>
+
+      <h3>9.2. La prière sur le Prophète ﷺ</h3>
+      <p>Après le tachahhoud, il prie sur le Prophète ﷺ. Parmi les formulations authentiques les plus connues :</p>
+      <div class="aya">Allahoumma salli 'alâ Mouhammadin wa 'alâ 'âli Mouhammad, kamâ sallayta 'alâ Ibrâhîma wa 'alâ 'âli Ibrâhîm, innaka hamîdoun majîd. Allahoumma bârik 'alâ Mouhammadin wa 'alâ 'âli Mouhammad, kamâ bârakta 'alâ Ibrâhîma wa 'alâ 'âli Ibrâhîm, innaka hamîdoun majîd.</div>
+      <p>Cette formule est appelée la prière abrahamique. Il est recommandé de la réciter dans le tachahhoud final ; certains savants la considèrent obligatoire et d'autres comme un pilier.</p>
+    </section>
+
+    <section class="card">
+      <h2>🕋 الفصل العاشر — Les invocations avant le salâm</h2>
+      <h3>Invocations rapportées</h3>
+      <p>Après le tachahhoud et la prière sur le Prophète ﷺ, il est recommandé de demander la protection d'Allah contre quatre choses, en disant :</p>
+      <div class="aya">Allahoumma innâ 'oudhou bika min 'adhbî jahannam, wa min 'adhbî-l-qabr, wa min fitnati-l-mahyâ wa-l-mamût, wa min charri fitnati-l-Masîhî-d-Dajjâl.</div>
+      <p>Parmi les invocations globales : <i>Allahoumma 'annâ 'âli d-dhikrika wa choukrika wa houwnî 'âbîdatik</i> et <i>Rabbanâ 'atîn fî-d-dounyâ hasanatan wa fî l-'akhirati hasanatan wa qinâ 'adhbâ-n-nûr</i>. Il est préférable de privilégier les invocations rapportées.</p>
+    </section>
+
+    <section class="card">
+      <h2>✅ الفصل الحادي عشر — Le salâm et la fin de la prière</h2>
+      <p>Après le tachahhoud final et les invocations, le fidèle tourne la tête vers la droite et dit : « As-salâmu 'alaykoum wa rahmatou-llâh », puis vers la gauche en disant la même formule. Le salâm clôt la prière et, selon l'avis le plus probant, fait partie de ses piliers.</p>
+    </section>
+
+    <section class="card">
+      <h2>📿 الفصل الثاني عشر — Les formules de rappel après la prière</h2>
+
+      <h3>12.1. Demander pardon trois fois</h3>
+      <p>Après le salâm, le fidèle demande pardon à Allah trois fois : « Astaghfirou-llâh, astaghfirou-llâh, astaghfirou-llâh », puis dit : <i>Allahoumma anta-s-salâm, wa minka-s-salâm, tabârakt yâ dhal-jalî wa l-ikrîm</i>.</p>
+
+      <h3>12.2. L'attestation de l'unicité d'Allah</h3>
+      <p>Parmi les formules authentiques : <i>Lâ ilâha illâ-llâhou wahadhou lâ charîka lah, lahou-l-moulkou wa lahou-l-hamd, wa houwa 'alî koulli chayîn qadîr</i>.</p>
+
+      <h3>12.3. Le tasbîh, le tahmîd et le takbîr</h3>
+      <p>Parmi les rappels connus après la prière : dire <i>Soubhâna-llâh</i> trente-trois fois, <i>Al-hamdou lillâh</i> trente-trois fois et <i>Allahou akbar</i> trente-trois fois, puis compléter la centaine par <i>Lâ ilâha illâ-llâhou wahadhou lâ charîka lah, lahou-l-moulkou wa lahou-l-hamd, wa houwa 'alî koulli chayîn qadîr</i>.</p>
+
+      <h3>12.4. Le verset du Trône (Âyat al-Koursî)</h3>
+      <p>Il est recommandé de réciter <i>Âyat al-Koursî</i> après la prière. Transcription phonétique :</p>
+      <div class="aya">Allahou lâ ilâha illâ houwa-l-hayyou-l-qayyûm. Lâ taçkhoudhouhou sinâtoun wa lâ noum. Lahou mâ fîs-samâwâtî wa mâ fî l-'arḍ. Man dhal-dhâl-dhâl-ladhî yachfahou 'indahou illâ bi-idhnih. Yâlamou mâ bayna aydâhim wa mâ khalfahoum, wa lâ youhtanâ bi-chayîn min 'ilmih illâ bim-chayyîn. Wâsiâ koursiyâhou-s-samâwâtî wa l-'arḍ, wa lâ yâoudouhou hifdhouhim, wa houwa-l-'âliyyou-l-'azîm.</div>
+      <p>C'est le verset 255 de la sourate al-Baqara (Coran, 2:255).</p>
+
+      <h3>12.5. Les sourates protectrices</h3>
+      <p>Il est recommandé de réciter les sourates al-Ikhlâs, al-Falaq et an-Nâs après la prière, en respectant les nombres rapportés dans la Sunna, sans considérer un ajout comme obligatoire.</p>
+    </section>
+
+    <section class="card">
+      <h2>⚖️ الفصل الثالث عشر — Différence entre pilier, obligation et acte recommandé</h2>
+      <h3>13.1. Le pilier</h3>
+      <p>Le pilier est une partie constitutive de la prière sans laquelle celle-ci n'est pas valide. Son omission n'est pas réparée par la seule prosternation de l'oubli. Parmi les piliers généralement cités : le takbîr d'entrée, la station debout dans la prière obligatoire pour celui qui en est capable, la récitation d'al-Fâtiha, l'inclinaison, le redressement après l'inclinaison, la prosternation, la position assise entre les deux prosternations, la tranquillité, le tachahhoud final, le salâm et l'ordre des piliers. Les détails de leur décompte et de leur formulation varient selon les savants.</p>
+
+      <h3>13.2. L'obligation</h3>
+      <p>Dans la terminologie de certains juristes, une obligation est un acte dont l'abandon délibéré entraîne un péché et dont l'omission par oubli est compensée par la prosternation de l'oubli. Parmi les exemples cités par ceux qui distinguent piliers et obligations : les takbîr de transition, <i>Samî'a-llâhou liman hamidah</i> pour l'imam et celui qui prie seul, <i>Rabbân wa laka-l-hamd</i>, les glorifications pendant l'inclinaison et la prosternation, ainsi que le premier tachahhoud et la position assise correspondante. Tous les détails de ces règles ne font pas l'unanimité.</p>
+
+      <h3>13.3. L'acte recommandé (Sunna)</h3>
+      <p>L'acte recommandé est récompensé lorsqu'il est accompli, sans que son abandon soit péché. Exemples : l'invocation d'ouverture, lever les mains aux endroits prescrits, réciter une sourate après al-Fâtiha à l'endroit approprié, ajouter des formules de rappel au-delà du minimum, varier les invocations de l'inclinaison et de la prosternation, et invoquer avant le salâm. Il ne faut pas être excessivement strict envers les gens au sujet des actes recommandés faisant l'objet d'une divergence reconnue.</p>
+    </section>
+
+    <section class="card">
+      <h2>🚫 الفصل الرابع عشر — Erreurs fréquentes dans la prière</h2>
+      <h3>Conseils pratiques</h3>
+      <p>Parmi les erreurs à éviter : ne pas observer la tranquillité, se précipiter dans la prosternation, se laisser absorber par les pensées obsessionnelles et répéter l'intention ou le takbîr sans raison, prononcer l'intention en croyant que cela conditionne la validité, s'attacher à une seule formule de rappel en pensant que les autres ne sont pas permises, abandonner volontairement le premier tachahhoud, regarder autour de soi sans nécessité, élever la voix au point de gêner les autres, croire que tous les rappels après la prière sont obligatoires, et condamner les autres dans des questions où l'effort d'interprétation est légitime.</p>
+    </section>
+
+    <section class="card">
+      <h2>🕌 الفصل الخامس عشر — Résumé pratique de la prière</h2>
+      <h3>Étapes dans l'ordre</h3>
+      <p><strong>1.</strong> Se tourner vers la qibla et former l'intention dans le cœur.<br>
+      <strong>2.</strong> Prononcer le takbîr d'entrée : « Allahou akbar ».<br>
+      <strong>3.</strong> Réciter une invocation d'ouverture rapportée.<br>
+      <strong>4.</strong> Demander protection contre Satan le maudit : « Âoudhou billâhi mina chaytanir-râjîm ».<br>
+      <strong>5.</strong> Réciter al-Fâtiha, puis dire : « Âmîn ».<br>
+      <strong>6.</strong> Réciter ce qui est facile du Coran pendant les deux premières unités.<br>
+      <strong>7.</strong> Dire <i>Allahou akbar</i>, s'incliner et dire <i>Soubhâna rabbiya-l-'azîm</i>.<br>
+      <strong>8.</strong> Se relever en disant <i>Samî'a-llâhou liman hamidah</i>, puis <i>Rabbân wa laka-l-hamd</i>.<br>
+      <strong>9.</strong> Dire <i>Allahou akbar</i>, se prosterner et dire <i>Soubhâna rabbiya-l-a'lâ</i>.<br>
+      <strong>10.</strong> Se relever de la prosternation et dire : <i>Rabbi-ghfirlî</i>.<br>
+      <strong>11.</strong> Effectuer la seconde prosternation et y prononcer les formules de rappel.<br>
+      <strong>12.</strong> Se lever pour la deuxième unité et répéter les actes de la première.<br>
+      <strong>13.</strong> S'asseoir après la deuxième unité pour le premier tachahhoud dans les prières de trois ou quatre unités.<br>
+      <strong>14.</strong> Se lever pour la troisième unité, puis la quatrième si la prière en comporte quatre.<br>
+      <strong>15.</strong> S'asseoir pour le tachahhoud final et réciter le tachahhoud et la prière abrahamique.<br>
+      <strong>16.</strong> Demander protection contre le châtiment de l'Enfer, le châtiment de la tombe, les épreuves de la vie et de la mort, et l'épreuve du Faux Messie.<br>
+      <strong>17.</strong> Prononcer le salâm à droite puis à gauche.<br>
+      <strong>18.</strong> Demander pardon à Allah trois fois et dire : <i>Allahoumma anta-s-salâm, wa minka-s-salâm, tabârakt yâ dhal-jalî wa l-ikrîm</i>.<br>
+      <strong>19.</strong> Récire les rappels après la prière : attestation de l'unicité, tasbîh, tahmîd et takbîr ; réciter aussi <i>Âyat al-Koursî</i> et les sourates protectrices selon la Sunna.</p>
+    </section>
+
+    <section class="card">
+      <h2>🏆 الخاتمة — Conclusion</h2>
+      <p>La prière unit les actes du cœur, de la langue et des membres. La perfection ne consiste pas seulement à effectuer des mouvements : il faut respecter ses piliers et obligations, réunir ses conditions, observer la tranquillité et rechercher le recueillement.</p>
+      <p>Les formules de rappel rapportées pendant la prière sont diverses. Alterner entre les formulations authentiques est conforme à la Sunna ; il ne convient donc pas d'imposer une seule formule lorsque d'autres sont également établies.</p>
+      <p>Il est conseillé au fidèle d'apprendre la description de la prière à partir de preuves authentiques, de préserver les piliers et la tranquillité, de multiplier les invocations en prosternation, de maintenir le tachahhoud, la prière abrahamique et les rappels après la prière, et d'éviter les excès de rigueur dans les questions où une divergence juridique reconnue existe.</p>
+      <p>Nous demandons à Allah de faire de nous des personnes assidues à la prière, recueillies en celle-ci et attachées à la Sunna de Son Prophète ﷺ, et de l'accepter. Allah sait mieux. Qu'Allah prie sur notre Prophète Muhammad, sur sa famille et sur tous ses Compagnons.</p>
+    </section>
+
+    <section class="card">
+      <h2>📝 ملاحظة — Note sur la transcription des invocations</h2>
+      <p>Les invocations arabes sont transcrites en lettres latines adaptées à la lecture francophone. Comme demandé, le son de la voyelle courte « â » ou « a » est écrit « â » ou « a » (par exemple : Allahou, Soubhâna), et le son « î » est écrit « î » (par exemple : bika, innî). Les signes comme « ' », « ' », « ' » et « » servent à approcher certains sons arabes ; la transcription reste une aide à la prononciation et ne remplace pas l'apprentissage de la récitation correcte.</p>
+    </section>
+
+    <div style="text-align:center;">
+      <a href="index.html" class="btn">⬅️ Retour à la page principale</a>
+      <a href="quiz.html" class="btn ghost" style="margin-inline-start:10px;">Faire le quiz 📝</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>الصفحة الشاملة — المراحل والشرح المفصل</p>
+    <p>Basé sur le document « La description de la prière du Prophète ﷺ — Du takbîr au salâm »</p>
+    <p>&copy; 2026 — Fait avec ❤️ pour l'éducation des enfants</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,613 @@
+/* ============================================================
+   Site : La Prière du Prophète ﷺ — Guide pour enfants (Français)
+   Design : élégant, doux, facile à lire, adapté aux enfants
+   ============================================================ */
+
+:root {
+  --primary: #4a7c59;        /* vert doux (islamique) */
+  --primary-dark: #2f5a3d;
+  --primary-light: #a8d5a2;
+  --accent: #f4a261;         /* orange doux */
+  --accent-dark: #e76f51;
+  --bg: #fbfaf5;             /* crème très clair */
+  --card: #ffffff;
+  --text: #3a3a3a;
+  --text-light: #6b6b6b;
+  --border: #e3e3d5;
+  --radius: 18px;
+  --shadow: 0 8px 24px rgba(0,0,0,0.07);
+  --shadow-sm: 0 4px 12px rgba(0,0,0,0.04);
+  --max-width: 1000px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', 'Verdana', 'Tahoma', 'Comic Sans MS', 'Cursive', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* ---------- Top bar ---------- */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--primary-dark);
+  color: #fff;
+  box-shadow: var(--shadow-sm);
+}
+
+.topbar .container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 10px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 800;
+  font-size: 1.15rem;
+  letter-spacing: 0.4px;
+}
+
+.brand .logo {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--accent);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 1.25rem;
+  color: var(--primary-dark);
+}
+
+.brand span {
+  color: #fff;
+}
+
+/* ---------- PDF button (top right) ---------- */
+.btn-pdf {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #ffffff;
+  color: var(--primary-dark);
+  border: none;
+  border-radius: 10px;
+  padding: 10px 18px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  cursor: pointer;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.18s, box-shadow 0.18s, background 0.18s;
+  white-space: nowrap;
+}
+
+.btn-pdf:hover {
+  background: #fff5f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.btn-pdf:active {
+  transform: translateY(0);
+}
+
+.btn-pdf svg { width: 18px; height: 18px; }
+
+/* ---------- Navigation ---------- */
+nav {
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 54px;
+  z-index: 90;
+}
+
+nav .container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  gap: 0;
+}
+
+nav a {
+  flex: 1;
+  text-align: center;
+  padding: 14px 8px;
+  text-decoration: none;
+  color: var(--text-light);
+  font-weight: 700;
+  font-size: 0.95rem;
+  border-right: 1px solid var(--border);
+  transition: all 0.2s;
+}
+
+nav a:last-child { border-right: none; }
+nav a:hover, nav a.active {
+  color: var(--primary-dark);
+  background: rgba(74,124,89,0.06);
+}
+
+/* ---------- Layout ---------- */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 32px 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--primary-dark);
+  margin-bottom: 8px;
+  letter-spacing: 0.3px;
+}
+
+.page-subtitle {
+  text-align: center;
+  color: var(--text-light);
+  margin-bottom: 36px;
+  font-size: 1.05rem;
+}
+
+/* ---------- Cards ---------- */
+.card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 26px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+  margin-bottom: 26px;
+}
+
+.card h2 {
+  color: var(--primary-dark);
+  font-size: 1.35rem;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  text-align: center;
+  padding: 52px 20px 30px;
+  border-radius: var(--radius);
+  background: linear-gradient(135deg, rgba(74,124,89,0.12), rgba(244,162,97,0.10));
+  margin-bottom: 34px;
+  border: 1px solid var(--border);
+}
+
+.hero h1 {
+  font-size: 2.1rem;
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+}
+
+.hero p {
+  color: var(--text-light);
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ---------- Steps (prayer positions) ---------- */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.step {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 20px 14px 22px;
+  text-align: center;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.step:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow);
+  border-color: var(--primary-light);
+}
+
+.step .step-img {
+  width: 100%;
+  height: 180px;
+  margin: 0 auto 14px;
+  border-radius: 16px;
+  background: #f3f7f1;
+  display: grid;
+  place-items: center;
+  border: 3px solid var(--primary-light);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(74,124,89,0.15);
+}
+
+.step .step-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.35s ease;
+}
+
+.step:hover .step-img img {
+  transform: scale(1.04);
+}
+
+.step .step-img::after {
+  content: attr(data-num);
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 24px;
+  height: 24px;
+  background: var(--accent-dark);
+  color: #fff;
+  border-radius: 50%;
+  font-size: 0.75rem;
+  font-weight: 800;
+  display: grid;
+  place-items: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.step h3 {
+  font-size: 0.98rem;
+  color: var(--primary-dark);
+  margin-bottom: 6px;
+  font-weight: 800;
+}
+
+.step p {
+  font-size: 0.82rem;
+  color: var(--text-light);
+  line-height: 1.5;
+}
+
+/* ---------- Chapters / accordion ---------- */
+.chapter {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin-bottom: 14px;
+  overflow: hidden;
+  background: var(--card);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s;
+}
+
+.chapter:hover { box-shadow: var(--shadow); }
+
+.chapter-head {
+  padding: 16px 20px;
+  background: rgba(74,124,89,0.06);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--primary-dark);
+  border-bottom: 1px solid var(--border);
+  user-select: none;
+}
+
+.chapter-head .chevron {
+  font-size: 1.2rem;
+  transition: transform 0.25s;
+}
+
+.chapter.open .chevron { transform: rotate(180deg); }
+
+.chapter-body {
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease;
+  background: #fffef9;
+}
+
+.chapter.open .chapter-body {
+  max-height: 2000px;
+  padding: 20px;
+}
+
+.chapter-body p {
+  margin-bottom: 10px;
+  color: var(--text);
+  font-size: 0.98rem;
+}
+
+.chapter-body p:last-child { margin-bottom: 0; }
+
+.chapter-body strong { color: var(--primary-dark); }
+
+/* Callout box */
+.callout {
+  background: #f3f7f1;
+  border-left: 5px solid var(--primary);
+  padding: 16px 20px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 22px 0;
+  font-size: 0.95rem;
+  color: var(--text-light);
+}
+
+.callout strong { color: var(--primary-dark); }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  padding: 11px 20px;
+  font-weight: 800;
+  font-size: 0.95rem;
+  cursor: pointer;
+  text-decoration: none;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.18s, background 0.18s, box-shadow 0.18s;
+}
+
+.btn:hover {
+  background: var(--primary-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+
+.btn:active { transform: translateY(0); }
+
+.btn.ghost {
+  background: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+}
+
+.btn.small {
+  padding: 8px 14px;
+  font-size: 0.85rem;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.step-link {
+  text-align: center;
+  margin-top: 4px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: 46px;
+  padding: 40px 20px;
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+}
+
+footer p { margin-bottom: 4px; }
+
+/* ---------- Stage header ---------- */
+.stage-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin: 26px 0;
+  padding: 22px;
+  background: #f3f7f1;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+
+.stage-header img {
+  max-width: 100%;
+  width: auto;
+  max-height: 330px;
+  border-radius: 14px;
+  box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+  object-fit: contain;
+}
+
+.stage-title {
+  font-weight: 800;
+  font-size: 1.1rem;
+  color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+@media (max-width: 640px) {
+  .topbar .container { flex-direction: column; align-items: stretch; gap: 14px; }
+  .brand { justify-content: center; }
+  nav { top: auto; }
+  nav .container { flex-direction: column; }
+  nav a { border-right: none; border-bottom: 1px solid var(--border); }
+  .page-title { font-size: 1.5rem; }
+  .step .step-img { width: 85px; height: 85px; }
+}
+
+/* ---------- Quiz page specific ---------- */
+.guide-box {
+  background: #f3f7f1;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 22px;
+  margin-bottom: 30px;
+}
+
+.guide-box h3 {
+  color: var(--primary-dark);
+  margin-bottom: 12px;
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.guide-box ul {
+  list-style: none;
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.guide-box ul li {
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.guide-box ul li::before {
+  content: "•";
+  color: var(--accent);
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+
+.quiz-card {
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 28px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+.question {
+  background: #fbfbf7;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 18px 22px;
+  margin-bottom: 18px;
+}
+
+.question p {
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--primary-dark);
+  margin-bottom: 14px;
+}
+
+.options {
+  display: grid;
+  gap: 8px;
+}
+
+.options label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.98rem;
+  color: var(--text);
+}
+
+.options input[type="radio"] { accent-color: var(--primary); }
+
+.options label:hover {
+  border-color: var(--primary);
+  background: rgba(74,124,89,0.07);
+}
+
+.options label.selected {
+  border-color: var(--primary);
+  background: rgba(74,124,89,0.12);
+}
+
+.options label.correct { border-color: #2e7d32; background: #e8f5e9; }
+.options label.wrong { border-color: #c62828; background: #ffebee; }
+
+.quiz-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.result {
+  margin-top: 26px;
+  padding: 22px;
+  border-radius: var(--radius);
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.15rem;
+  display: none;
+}
+
+.result.ok { background: #e8f5e9; color: #1b5e20; border: 1px solid #81c784; }
+.result.warn { background: #fff3e0; color: #e65100; border: 1px solid #ffcc80; }
+.result.bad { background: #ffebee; color: #c62828; border: 1px solid #ef9a9a; }
+
+.explanation {
+  margin-top: 14px;
+  padding: 14px 18px;
+  background: #f1f8e9;
+  border-left: 4px solid var(--primary);
+  border-radius: 0 12px 12px 0;
+  font-size: 0.95rem;
+  color: var(--text-light);
+  display: none;
+}
+
+.explanation.show { display: block; }
+
+/* ---------- Bouton permanent « Installer » (PWA) ---------- */
+.nav-install {
+  padding: 14px 22px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 800;
+  line-height: 1.7;
+  text-align: center;
+  color: #fff;
+  background: var(--primary);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+
+.nav-install:hover,
+.nav-install:focus-visible {
+  background: var(--primary-dark);
+  color: #fff;
+  outline: none;
+}

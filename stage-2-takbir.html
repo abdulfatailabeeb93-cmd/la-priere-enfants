@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المرحلة 2 — Takbîr d'entrée | La Prière du Prophète</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="theme-color" content="#4a7c59">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <script>
+    /* Enregistrement du Service Worker — SITE PUBLIÉ UNIQUEMENT :
+       jamais en local (développement), jamais dans une iframe (aperçu). */
+    (function () {
+      if (!('serviceWorker' in navigator)) return;
+      var host = location.hostname;
+      var isLocal =
+        location.protocol === 'file:' ||
+        host === 'localhost' ||
+        host === '127.0.0.1' ||
+        host === '[::1]';
+      if (isLocal) return;
+      if (window.self !== window.top) return;
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('sw.js').catch(function () {});
+      });
+    })();
+  </script>
+  <script src="install-banner.js"></script>
+</head>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <div class="brand">
+        <div class="logo">🕌</div>
+        <span>La Prière du Prophète ﷺ</span>
+      </div>
+      <a href="Description_priere_et_adhkar_francais.pdf" download class="btn-pdf" title="Télécharger le document source (PDF)">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+          <polyline points="7 10 12 15 17 10"></polyline>
+          <line x1="12" y1="15" x2="12" y2="3"></line>
+        </svg>
+        Télécharger le fichier source
+      </a>
+    </div>
+  </div>
+
+  <nav>
+    <div class="container">
+      <a href="index.html">Accueil</a>
+      <a href="quiz.html">Quiz</a>
+      <a href="guide.html">Guide complet</a>
+      <a href="stage-2-takbir.html" class="active">المرحلة 2</a>
+      <button type="button" class="nav-install" title="Installer l&apos;application">&#8595; Installer</button>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1 class="page-title">المرحلة 2 — Takbîr d'entrée</h1>
+    <p class="page-subtitle">Le takbîr d'entrée : « Allahou akbar » — Le début de la prière</p>
+
+    <div class="stage-header">
+      <img src="images/stage-2-takbir.jpg" alt="Takbir d'entree">
+      <div class="stage-title">🕌 étape 2 — Takbîr d'entrée</div>
+    </div>
+
+    <section class="card">
+      <h2>🕌 Le takbîrat al-ihrâm (takbîr d'entrée en prière)</h2>
+      <p>Le fidèle lève les mains à hauteur des épaules ou des prunelles des hautes oreilles, puis dit : « Allahou akbar » (Allah est le plus Grand).</p>
+      <p><strong>Le takbîr est un pilier :</strong> la prière ne commence pas sans lui. Il est permis de lever les mains en même temps que le takbîr, juste avant ou juste après, car ces manières sont rapportées dans la Sunna.</p>
+      <p>Il place la main droite sur la main gauche selon la manière rapportée dans la Sunna, sans affectation. L'intention se trouve dans le cœur : il détermine intentionnellement quelle prière il accomplit, sans la prononcer.</p>
+      <div class="callout"><strong>💡 Pour les enfants :</strong> Le Takbîr (Allahou akbar) est le premier mot et le premier geste du début — la prière commence ici !</div>
+    </section>
+
+    <div class="quiz-actions">
+      <a href="stage-1-qibla.html" class="btn">⬅️ المرحلة السابقة</a>
+      <a href="index.html" class="btn">🏠 Retour à l'accueil</a>
+      <a href="stage-3-intention.html" class="btn">المرحلة التالية — Intentions ➜</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>الصفحة الشاملة — مراحل الصلاة والشرح المفصل</p>
+    <p>Basé sur le document « La description de la prière du Prophète ﷺ — Du takbîr au salâm »</p>
+    <p>&copy; 2026 — Fait avec ❤️ pour l'éducation des enfants</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

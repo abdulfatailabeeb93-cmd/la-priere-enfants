@@ -68,7 +68,13 @@ document.addEventListener('DOMContentLoaded', function () {
           done();
         })
         .catch(function () {
-          window.open(url, '_blank');
+          // Repli SANS aucune redirection : téléchargement natif du fichier
+          var a2 = document.createElement('a');
+          a2.href = url;
+          a2.download = 'Description_priere_et_adhkar_francais.pdf';
+          document.body.appendChild(a2);
+          a2.click();
+          a2.remove();
           done();
         });
     });

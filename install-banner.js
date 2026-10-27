@@ -97,7 +97,7 @@
     } else if (mode === 'fallback') {
       /* pas d'invitation native (navigateur sans beforeinstallprompt) :
          guider vers le menu du navigateur */
-      var fb = el('p', 'pwa-ios-steps', 'Ouvrez le menu ⋮ de votre navigateur puis choisissez « Installer l’application ».');
+      var fb = el('p', 'pwa-ios-steps', 'Ouvrez le menu ⋮ de votre navigateur puis choisissez « Installer l’application » — ou l’icône ⊕ dans la barre d’adresse.');
       box.appendChild(fb);
       var ok2 = el('button', 'pwa-later-btn', 'J’ai compris');
       ok2.type = 'button';

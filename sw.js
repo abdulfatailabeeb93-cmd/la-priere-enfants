@@ -6,7 +6,7 @@
    - Exclus (réseau seul): chemins login / auth / OAuth / tokens
    ============================================================ */
 
-const VERSION = 'v2-pwa-2026-10-25';
+const VERSION = 'v3-pwa-2026-10-27';
 const PAGES_CACHE = 'pages-' + VERSION;
 const FILES_CACHE = 'files-' + VERSION;
 const OFFLINE_FALLBACK = './index.html';
